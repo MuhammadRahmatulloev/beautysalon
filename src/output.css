@@ -163,6 +163,24 @@
   }
 }
 @layer utilities {
+  .relative {
+    position: relative;
+  }
+  .left-\[-10\%\] {
+    left: -10%;
+  }
+  .left-\[-10\] {
+    left: -10;
+  }
+  .left-\[-15\%\] {
+    left: -15%;
+  }
+  .left-\[-30\%\] {
+    left: -30%;
+  }
+  .left-\[-50\%\] {
+    left: -50%;
+  }
   .m-auto {
     margin: auto;
   }
@@ -196,9 +214,6 @@
   .resize {
     resize: both;
   }
-  .list-decimal {
-    list-style-type: decimal;
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -211,17 +226,14 @@
   .justify-between {
     justify-content: space-between;
   }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
-  .rounded-\[5p\] {
-    border-radius: 5p;
+  .gap-52 {
+    gap: calc(var(--spacing) * 52);
   }
   .rounded-\[5px\] {
     border-radius: 5px;
@@ -239,9 +251,6 @@
   }
   .bg-\[\#69B99D\] {
     background-color: #69B99D;
-  }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
@@ -284,6 +293,36 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .lg\:absolute {
+    @media (width >= 64rem) {
+      position: absolute;
+    }
+  }
+  .lg\:relative {
+    @media (width >= 64rem) {
+      position: relative;
+    }
+  }
+  .lg\:left-\[-10\%\] {
+    @media (width >= 64rem) {
+      left: -10%;
+    }
+  }
+  .lg\:left-\[-20\%\] {
+    @media (width >= 64rem) {
+      left: -20%;
+    }
+  }
+  .lg\:left-\[-50\%\] {
+    @media (width >= 64rem) {
+      left: -50%;
+    }
+  }
+  .lg\:left-\[-\] {
+    @media (width >= 64rem) {
+      left: -;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -294,9 +333,9 @@
       display: none;
     }
   }
-  .lg\:w-\[40\%\] {
+  .lg\:w-\[0\%\] {
     @media (width >= 64rem) {
-      width: 40%;
+      width: 0%;
     }
   }
   .lg\:w-\[50\%\] {
@@ -309,9 +348,9 @@
       width: 60%;
     }
   }
-  .lg\:w-\[70\%\] {
+  .lg\:w-full {
     @media (width >= 64rem) {
-      width: 70%;
+      width: 100%;
     }
   }
   .lg\:flex-row {
